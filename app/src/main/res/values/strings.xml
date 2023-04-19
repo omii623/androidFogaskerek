@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">szerviz</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="tab_text_1">Hírek</string>
+    <string name="tab_text_2">Feltöltés</string>
+    <string name="tab_text_3">Adatok</string>
+    <string name="felhasznalonev">felhasználónév</string>
+    <string name="jelszo">jelszó</string>
+    <string name="belepes">belépés</string>
+    <string name="regisztracio">Regisztráció</string>
+    <string name="informacio">Információ</string>
+    <string name="cim">Cím: 3832 Léh, Baross tér 89.</string>
+    <string name="tel">Tel.: +36654528432</string>
+    <string name="email">email cím</string>
+    <string name="jelszo2">jelszó újból</string>
+    <string name="telefonszam">telefonszám</string>
+    <string name="cim2">cím</string>
+    <string name="megsem">mégsem</string>
+    <string name="vissza">Vissza</string>
+    <string name="fogaskerekSzerviz">Fogaskerék szerviz</string>
+    <string name="mentes">mentés</string>
+    <string name="rolunk">Az Fogaskerék Kft. egy megbízható és elismert elektronikai szerelő vállalkozás.\nAmely széles körű szolgáltatásokat kínál az ügyfeleknek.</string>
+</resources>
