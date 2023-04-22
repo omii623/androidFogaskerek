@@ -56,10 +56,13 @@
             app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
             app:layout_constraintVertical_bias="0.052" />
 
+        <!--android:background="@drawable/button_sing_in"-->
+
         <Button
             android:id="@+id/registButton"
             android:layout_width="190dp"
             android:layout_height="40dp"
+            android:layout_marginTop="16dp"
             android:onClick="regist"
             android:text="@string/regisztracio"
             android:transitionName="splash_text"
@@ -68,7 +71,45 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/loginButton"
-            app:layout_constraintVertical_bias="0.052" />
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/gButton"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_sing_in"
+            android:drawableLeft="@drawable/google_logo"
+            android:hapticFeedbackEnabled="false"
+            android:onClick="registGoogle"
+            android:text="@string/sing_in"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:theme="@style/GombSajat"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/registButton" />
+
+        <!--<Button
+            android:id="@+id/fbButton"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_sing_in"
+            android:drawableLeft="@drawable/facebook_logo"
+            android:hapticFeedbackEnabled="false"
+            android:onClick="registFacebook"
+            android:text="@string/sing_in"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:theme="@style/GombSajat"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gButton"
+            app:layout_constraintVertical_bias="0.0" />-->
 
         <Button
             android:id="@+id/infoButton"
@@ -84,6 +125,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

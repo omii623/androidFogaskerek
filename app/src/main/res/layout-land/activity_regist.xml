@@ -116,7 +116,6 @@
                 android:id="@+id/addressEditText"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-
                 android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="16dp"
@@ -145,7 +144,7 @@
                 android:id="@+id/button3"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-
+                android:onClick="regist"
                 android:layout_marginTop="32dp"
                 android:text="@string/regisztracio"
                 app:layout_constraintEnd_toStartOf="@+id/button2"

@@ -2,7 +2,7 @@
     <string name="app_name">szerviz</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="tab_text_1">Hírek</string>
-    <string name="tab_text_2">Feltöltés</string>
+    <string name="tab_text_2">Időpontok</string>
     <string name="tab_text_3">Adatok</string>
     <string name="felhasznalonev">felhasználónév</string>
     <string name="jelszo">jelszó</string>
@@ -20,4 +20,5 @@
     <string name="fogaskerekSzerviz">Fogaskerék szerviz</string>
     <string name="mentes">mentés</string>
     <string name="rolunk">Az Fogaskerék Kft. egy megbízható és elismert elektronikai szerelő vállalkozás.\nAmely széles körű szolgáltatásokat kínál az ügyfeleknek.</string>
+    <string name="sing_in">Sing in</string>
 </resources>
