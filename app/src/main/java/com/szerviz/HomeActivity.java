@@ -122,15 +122,6 @@ public class HomeActivity extends AppCompatActivity/* implements LoaderManager.L
 
     public void save(View view){
         updateEditText();
-        if(!passwordOldEditText.getText().toString().isEmpty() &&
-           !passwordEditText.getText().toString().isEmpty() &&
-           !passwordConfirmEditText.getText().toString().isEmpty() &&
-           passwordConfirmEditText.getText().toString().equals(passwordEditText.getText().toString())
-        ){
-            //todo check
-            Log.d(LOG_TAG,"jelszó csere: "+passwordEditText.getText().toString());
-            firebaseUser.updatePassword(passwordEditText.toString());
-        }
 
         UserController.getInstance().updateUser(userNameEditText.getText().toString(),phoneEditText.getText().toString(),addressEditText.getText().toString());
         user = UserController.getInstance().getUserByEmail(firebaseUser.getEmail());
