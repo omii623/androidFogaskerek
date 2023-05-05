@@ -23,6 +23,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.szerviz.data.controller.UserController;
+import com.szerviz.data.model.User;
 
 public class RegistActivity extends AppCompatActivity {
     private static final String LOG_TAG = RegistActivity.class.getName();
@@ -87,6 +89,8 @@ public class RegistActivity extends AppCompatActivity {
         String phone = phoneEditText.getText().toString();
         String address = addressEditText.getText().toString();
 
+        User user = new User(userName,email,"password",phone,address);
+
         if(userName.equals("") || email.equals("")){//todo többi
             notification("HIBA","Nem lehet üres block");
             Log.e(LOG_TAG, "Nem lehet üres block");
@@ -105,13 +109,14 @@ public class RegistActivity extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful()){
+                    UserController uc = UserController.getInstance();
+                    uc.addUser(user);
                     Log.d(LOG_TAG,"Sikeresen létrehozva");
-                    //todo kiszervezni
                     Intent intentHome = new Intent(RegistActivity.this, HomeActivity.class);
                     startActivity(intentHome);
                 }else{
                     notification("HIBA","Hiba merült fel a regisztráció során");
-                    Log.e(LOG_TAG,"Hiba merült fel");
+                    Log.e(LOG_TAG,"Hiba merült fel: " + task.getResult());
                 }
             }
         });

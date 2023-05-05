@@ -19,6 +19,10 @@
     <string name="vissza">Vissza</string>
     <string name="fogaskerekSzerviz">Fogaskerék szerviz</string>
     <string name="mentes">mentés</string>
-    <string name="rolunk">Az Fogaskerék Kft. egy megbízható és elismert elektronikai szerelő vállalkozás.\nAmely széles körű szolgáltatásokat kínál az ügyfeleknek.</string>
+    <string name="rolunk">Az Fogaskerék Kft. egy megbízható és elismert elektronikai szerelő vállalkozás.</string>
     <string name="sing_in">Sing in</string>
+    <string name="betoltes">betöltés</string>
+    <string name="jelentkezes">Jelentkezés</string>
+    <string name="frisites">Frisítés</string>
+    <string name="utolsoTorles">utolsó törlés</string>
 </resources>

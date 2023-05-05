@@ -10,7 +10,7 @@
         android:layout_width="372dp"
         android:layout_height="291dp"
         android:layout_marginTop="32dp"
-        android:background="#F5F5F5"
+        android:background="#AAAAAA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -30,6 +30,7 @@
                 android:gravity="center"
                 android:hint="@string/felhasznalonev"
                 android:inputType="textPersonName"
+                android:textColor="@color/purple_500"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -39,10 +40,13 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
                 android:ems="10"
                 android:gravity="center"
                 android:hint="@string/telefonszam"
                 android:inputType="phone"
+                android:textColor="@color/purple_500"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/addressEditTextHome" />
@@ -59,50 +63,10 @@
                 android:hint="@string/cim2"
                 android:inputType="textMultiLine|textPostalAddress"
                 android:maxLines="3"
+                android:textColor="@color/purple_500"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/userNameEditTextHome" />
-
-            <EditText
-                android:id="@+id/passwordOldEditTextHome"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="jelszó régi"
-                android:inputType="textPassword"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/phoneEditTextHome" />
-
-            <EditText
-                android:id="@+id/passwordNewEditTextHome"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="jelszó új"
-                android:inputType="textPassword"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/passwordOldEditTextHome" />
-
-            <EditText
-                android:id="@+id/passwordNewAgainEditTextHome"
-                android:layout_width="300dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="32dp"
-                android:ems="10"
-                android:gravity="center"
-                android:hint="jelszó újból"
-                android:inputType="textPassword"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/passwordNewEditTextHome" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
@@ -111,25 +75,38 @@
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="32dp"
         android:onClick="save"
         android:text="@string/mentes"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/saveButton2"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <Button
+        android:id="@+id/saveButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="1dp"
+        android:onClick="update"
+        android:text="@string/betoltes"
+        app:layout_constraintEnd_toStartOf="@+id/saveButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
-        android:layout_width="299dp"
-        android:layout_height="129dp"
-        android:layout_marginTop="419dp"
+        android:layout_width="285dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="400dp"
         android:ems="10"
         android:enabled="false"
         android:gravity="start|top"
         android:inputType="textMultiLine"
         android:justificationMode="none"
         android:text="@string/rolunk"
+        android:textColor="@color/purple_500"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/scrollView2" />
